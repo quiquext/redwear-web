@@ -1,0 +1,772 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+    background: #f5f5f5;
+
+}
+
+/* HEADER */
+.header {
+    background: #b80000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* LOGO IZQUIERDA */
+.logo-img {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 140px;
+    /* perfecto para este logo */
+    height: auto;
+}
+
+/* TÍTULO */
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* NAV DEBAJO */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* CARRITO DERECHA */
+.carrito {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("img/sudadera Negra.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+/* INFO */
+.info,
+.info-extra {
+    padding: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* BENEFICIOS */
+.beneficios {
+    text-align: center;
+    padding: 60px 20px;
+    background: #eee;
+}
+
+.beneficios-cajas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.beneficio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* PRODUCTOS */
+.productos {
+    padding: 40px;
+    text-align: center;
+}
+
+/* FILAS */
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.fila-3 .card {
+    width: 250px;
+}
+
+.fila-4 .card {
+    width: 200px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* BOTONES */
+button {
+    background: #b80000;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8a0000;
+}
+
+/* EXTRA */
+.extra {
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.extra-cajas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.extra-cajas div {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* CONTACTO HOME */
+.contacto-home {
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-contenido div {
+    margin: 10px;
+}
+
+.footer-contenido h4 {
+    margin-bottom: 10px;
+}
+
+.footer-contenido p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-suscripcion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-suscripcion input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-suscripcion button {
+    margin-left: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.contacto-pro {
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+
+.contacto-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IZQUIERDA */
+.contacto-info {
+    flex: 1;
+}
+
+.contacto-info h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contacto-info p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-item span {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #d00000;
+}
+
+/* DERECHA */
+.contacto-form {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contacto-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contacto-form button {
+    width: 100%;
+}
+
+/* ANIMACIONES */
+.contacto-info,
+.contacto-form {
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* EFECTO HOVER CONTACTO */
+.contacto-form:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.mapa {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.ofrecemos-cajas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ofrecemos-cajas div {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.ofrecemos-cajas div:hover {
+    transform: translateY(-5px);
+}
+
+.proceso {
+    padding: 60px;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.proceso h2 {
+    margin-bottom: 30px;
+}
+
+.proceso-pasos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.proceso-pasos div {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    width: 180px;
+    transition: 0.3s;
+}
+
+.proceso-pasos div:hover {
+    transform: translateY(-5px);
+    background: #b80000;
+}
+
+.proceso-pasos span {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+section {
+    border-bottom: 1px solid #ddd;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.header {
+    background: #b80000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: #b80000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8a0000;
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* SUAVIDAD GLOBAL */
+* {
+    transition: all 0.2s ease;
+}
+
+.hero {
+    animation: fadeHero 1s ease;
+}
+
+@keyframes fadeHero {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aparecer {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.aparecer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carrito {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+}
+
+.contador {
+    background: white;
+    color: #b80000;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* ANIMACIÓN */
+.contador.animar {
+    transform: scale(1.4);
+    background: #ffdede;
+}
+
+.carrito {
+    cursor: pointer;
+}
+
+.carrito:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.carrito {
+    transition: 0.2s;
+}
+
+a {
+    transition: 0.2s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.info p,
+.info-extra p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.info h2,
+.info-extra h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.info,
+.info-extra {
+    padding: 60px 20px;
+}
+
+.info,
+.info-extra,
+.ofrecemos {
+    background: white;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    padding: 50px 30px;
+
+    /* SOMBRA PRO */
+    box-shadow: 0 8px 25px rgba(184, 0, 0, 0.08);
+}
+
+.ofrecemos-cajas {
+    margin-top: 20px;
+}
+
+/* ===== AJUSTE GLOBAL FINAL ===== */
+
+body {
+    background: #f5f5f5 !important;
+}
+
+/* IGUALAR TÍTULOS */
+.info h2,
+.info-extra h2,
+.ofrecemos h2 {
+    font-size: 32px !important;
+}
+
+/* TARJETAS SECCIONES */
+.info,
+.info-extra,
+.ofrecemos {
+    background: white;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    padding: 50px 30px;
+    box-shadow: 0 8px 25px rgba(184, 0, 0, 0.08);
+}
+
+/* ===== BLOQUE FINAL FORZADO ===== */
+
+/* FONDO GLOBAL */
+body {
+    background: #f5f5f5 !important;
+}
+
+/* CONTENEDORES */
+.info,
+.info-extra,
+.ofrecemos {
+    background: white !important;
+    margin: 40px auto !important;
+    max-width: 1000px !important;
+    border-radius: 12px !important;
+    padding: 50px 30px !important;
+    box-shadow: 0 8px 25px rgba(184, 0, 0, 0.08) !important;
+}
+
+/* TÍTULOS IGUALES */
+.info h2,
+.info-extra h2,
+.ofrecemos h2 {
+    font-size: 32px !important;
+    margin-bottom: 20px !important;
+}
+
+/* TEXTOS */
+.info p,
+.info-extra p,
+.ofrecemos p {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+}
+
+.ofrecemos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.ofrecemos-cajas div {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    /* SOMBRA */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.ofrecemos-cajas div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ofrecemos-cajas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ===== SOMBRA TARJETAS FORZADA ===== */
+
+.ofrecemos-cajas div {
+    background: white !important;
+    padding: 25px !important;
+    border-radius: 12px !important;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+
+    transition: 0.3s;
+}
+
+.ofrecemos-cajas div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:768px) {
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* PRODUCTOS */
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* TARJETAS */
+    .card {
+        width: 90%;
+    }
+
+    /* BENEFICIOS */
+    .beneficios-cajas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* OFRECEMOS */
+    .ofrecemos-cajas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* TEXTO */
+    .info p,
+    .info-extra p {
+        padding: 0 10px;
+    }
+
+    /* CONTACTO */
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:1024px) {
+
+    .fila {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+}
+
+/* LOGO */
+.logo-img {
+    position: absolute;
+    left: 30px;
+    /* separación del borde */
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 110px;
+    /* tamaño bueno */
+    height: 110px;
+
+    object-fit: contain;
+
+    /* mejora visual */
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+}
+
+@media (max-width:768px) {
+
+    .logo-img {
+        width: 90px;
+        left: 10px;
+    }
+
+    .header {
+        padding: 25px 10px;
+    }
+
+}

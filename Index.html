@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REDWEAR</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img src="img/logo.png" class="logo-img" alt="Logo REDWEAR">
+
+        <h1>REDWEAR</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="carrito">
+            🛒 <span id="contador" class="contador">0</span>
+        </div>
+
+    </div>
+
+    <section class="hero">
+        <h2>Sudaderas básicas de calidad</h2>
+        <p>Diseño minimalista · Importación directa · Mejor precio</p>
+    </section>
+
+    <section class="info aparecer">
+        <h2>Sobre el proyecto</h2>
+        <p>
+            REDWEAR es un proyecto enfocado en la importación de sudaderas básicas desde China hacia España,
+            con el objetivo de analizar la viabilidad económica del negocio, optimizar costes y estudiar los procesos
+            logísticos internacionales.
+        </p>
+
+        <p>
+            Se ha realizado un estudio completo del producto, incluyendo selección de proveedores, transporte, costes de
+            importación y comercialización final,
+            permitiendo simular un modelo de negocio real dentro del sector textil.
+        </p>
+    </section>
+
+    <section class="info-extra aparecer">
+        <h2>Nuestra misión</h2>
+        <p>
+            Nuestra misión es ofrecer productos de calidad a un precio competitivo, mediante la optimización de los
+            procesos logísticos
+            y la reducción de intermediarios, garantizando así una relación directa entre proveedor y cliente final.
+        </p>
+
+        <p>
+            Buscamos crear una marca accesible, eficiente y escalable, capaz de competir en el mercado actual ofreciendo
+            un equilibrio entre calidad y precio.
+        </p>
+    </section>
+
+    <section class="ofrecemos aparecer">
+
+        <h2>¿Qué ofrecemos?</h2>
+
+        <div class="ofrecemos-cajas">
+
+            <div>
+                <h3>Diseño básico</h3>
+                <p>Sudaderas versátiles adaptadas a cualquier estilo.</p>
+            </div>
+
+            <div>
+                <h3>Precio competitivo</h3>
+                <p>Optimización de costes gracias a la importación directa.</p>
+            </div>
+
+            <div>
+                <h3>Producción internacional</h3>
+                <p>Fabricación en China con control de calidad.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 🔥 AQUI VA PROCESO -->
+    <section class="proceso">
+
+        <h2>Nuestro proceso</h2>
+
+        <div class="proceso-pasos">
+
+            <div>
+                <span>1</span>
+                <p>Selección de proveedor</p>
+            </div>
+
+            <div>
+                <span>2</span>
+                <p>Importación del producto</p>
+            </div>
+
+            <div>
+                <span>3</span>
+                <p>Recepción y control</p>
+            </div>
+
+            <div>
+                <span>4</span>
+                <p>Venta al cliente</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="beneficios aparecer">
+        <div>🚚 Envío rápido</div>
+        <div>🔒 Pago seguro</div>
+        <div>📦 Importación directa</div>
+    </section>
+
+    <section class="productos">
+
+        <h2>Productos destacados</h2>
+
+        <!-- FILA 1 -->
+        <div class="fila fila-3">
+
+            <div class="card">
+                <img src="img/sudadera Blanca.png">
+                <h3>Sudadera blanca</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sudadera Negra.png">
+                <h3>Sudadera negra</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sudadera Roja.png">
+                <h3>Sudadera roja</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+        </div>
+
+        <!-- FILA 2 -->
+        <div class="fila fila-4">
+
+            <div class="card">
+                <img src="img/sudadera Azul.png">
+                <h3>Sudadera azul</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sudadera Rosa.png">
+                <h3>Sudadera rosa</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sudadera Verde.png">
+                <h3>Sudadera verde</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sudadera Gris.png">
+                <h3>Sudadera gris</h3>
+                <strong>15€</strong>
+                <button onclick="añadir()">Añadir</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="beneficios aparecer">
+        <h2>¿Por qué elegir REDWEAR?</h2>
+
+        <div class="beneficios-cajas">
+
+            <div class="beneficio">
+                <h3>💰 Importación directa</h3>
+                <p>Eliminamos intermediarios para ofrecer precios más competitivos sin perder calidad en el producto
+                    final.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>✔ Calidad garantizada</h3>
+                <p>Todos los productos han sido analizados dentro del proyecto, asegurando estándares adecuados de
+                    fabricación.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>📊 Proyecto real</h3>
+                <p>Basado en un estudio completo de importación, incluyendo costes, logística y viabilidad económica.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="extra">
+            Nuestro objetivo es construir una marca sólida basada en la eficiencia, la transparencia y la optimización
+            de recursos,
+            adaptándonos a las necesidades del mercado actual.
+        </p>
+
+    </section>
+
+    <section class="contacto-pro">
+
+        <div class="contacto-container">
+
+            <!-- IZQUIERDA -->
+            <div class="contacto-info">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes dudas sobre nuestros productos o pedidos? Estamos aquí para ayudarte.</p>
+
+                <div class="info-item">
+                    <span>📍</span>
+                    <p>España</p>
+                </div>
+
+                <div class="info-item">
+                    <span>📧</span>
+                    <p>redwear@gmail.com</p>
+                </div>
+
+                <div class="info-item">
+                    <span>📞</span>
+                    <p>+34 600 000 000</p>
+                </div>
+
+            </div>
+
+            <!-- DERECHA -->
+            <div class="contacto-form">
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="text" placeholder="Asunto">
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div>
+                <h4>Sobre nosotros</h4>
+                <p>Quiénes somos</p>
+                <p>Responsabilidad social</p>
+                <p>Empleo</p>
+                <p>Información legal</p>
+            </div>
+
+            <div>
+                <h4>Ayuda & Soporte</h4>
+                <p>Envíos</p>
+                <p>Devoluciones</p>
+                <p>Guía de tallas</p>
+                <p>Preguntas frecuentes</p>
+            </div>
+
+            <div>
+                <h4>Atención al cliente</h4>
+                <p>Contacto</p>
+                <p>Pagos</p>
+                <p>Seguimiento de pedido</p>
+                <p>Incidencias</p>
+            </div>
+
+            <div>
+                <h4>Síguenos</h4>
+                <p>📸 Instagram</p>
+                <p>🎵 TikTok</p>
+                <p>🐦 Twitter</p>
+            </div>
+
+        </div>
+
+        <div class="footer-suscripcion">
+            <p>Suscríbete para recibir ofertas y novedades</p>
+            <input type="email" placeholder="Tu email">
+            <button>Suscribirse</button>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 REDWEAR - Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+    <script>
+
+        let contador = 0;
+
+        function añadir() {
+            contador++;
+
+            let contadorHTML = document.getElementById("contador");
+            contadorHTML.innerText = contador;
+
+            /* animación */
+            contadorHTML.classList.add("animar");
+
+            setTimeout(() => {
+                contadorHTML.classList.remove("animar");
+            }, 200);
+        }
+
+        /* SCROLL */
+        window.addEventListener("scroll", () => {
+
+            let elementos = document.querySelectorAll(".aparecer");
+
+            elementos.forEach(el => {
+
+                let top = el.getBoundingClientRect().top;
+
+                if (top < window.innerHeight - 50) {
+                    el.classList.add("visible");
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

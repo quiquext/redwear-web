@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Producto</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img src="img/logo.png" class="logo-img" alt="Logo REDWEAR">
+
+        <h1>REDWEAR</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="carrito">
+            🛒 <span id="contador" class="contador">0</span>
+        </div>
+
+    </div>
+
+    <section class="producto-detalle">
+
+        <div class="producto-img">
+            <img src="img/sudadera Blanca.png">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Sudadera básica</h2>
+            <p class="precio">15€</p>
+
+            <p>
+                Sudadera básica unisex, cómoda y resistente,
+                ideal para uso diario.
+            </p>
+
+            <label>Talla:</label><br>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="añadir()">Añadir al carrito</button>
+
+            <div class="beneficios">
+                <p>🚚 Envío rápido</p>
+                <p>✔ Calidad garantizada</p>
+                <p>📦 Importación directa</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 REDWEAR</p>
+    </footer>
+
+    <script>
+        let contador = 0;
+
+        function añadir() {
+            contador++;
+            alert("Producto añadido");
+        }
+    </script>
+
+</body>
+
+</html>
